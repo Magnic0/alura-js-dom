@@ -1,6 +1,6 @@
 # Robotron 2000 (JavaScript DOM Course)
 
-This is a repository forked for me to learn (and only learn) about the **JavaScript's Document Object Model**. The base files from this project was provided by the course teacher, so we as students could go right to the point.
+This is a repository cloned for me to learn (and only learn) about the **JavaScript's Document Object Model**. The base files from this project was provided by the course teacher, so we as students could go right to the point.
 
 ## Page and Documentation
 
