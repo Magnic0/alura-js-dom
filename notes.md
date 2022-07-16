@@ -20,7 +20,9 @@ Além dos métodos, como mencionado acima, existem propriedades criadas para ess
 
 - `document.getElementById('id')`: Seleciona um elemento pelo seu ID;
 - `document.getElementsByTagName('tag')`: Seleciona elementos pela sua tag;
-- `document.getElementsByClassName('class')`: Seleciona elementos pela classe.
+- `document.getElementsByClassName('class')`: Seleciona elementos pela classe;
+- `document.querySelector(element)`: Seleciona qualquer elemento especificado;
+- `document.querySelectorAll(element)`: Seleciona todos os elementos com o identificador especificado.
 
 2. Propriedades e métodos para **modificar** elementos HTML:
 
@@ -36,3 +38,13 @@ Além dos métodos, como mencionado acima, existem propriedades criadas para ess
 - `document.removeChild(element)`: Faz o contrário do método acima;
 - `document.replaceChild(element)`: Substitui um elemento HTML;
 - `document.createElement(element)` Cria um elemento HTML.
+
+Um método conhecido e comumente usado, é o `element.addEventListener(event, action)`. Este tem uma função simples, porém extremamente útil, já que é capaz de *perceber* um evento acionado pelo usuário HTML e executar um bloco de código especificado para tal. Exemplo:
+
+```
+button.addEventListener('click', () => {
+  alert('I'm clicked!');
+});
+```
+
+O bloco acima demonstra a utilização de um *EventListener* para a percepção de um clique no elemento `button`, fazendo com que seja executada uma **arrow function** que dispara um alerta no navegador.
