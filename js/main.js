@@ -1,21 +1,22 @@
-const partValue = document.querySelectorAll('.controle-contador');
 const control = document.querySelectorAll('.controle-ajuste');
 
 control.forEach((element) => {
     element.addEventListener('click', (event) => {
-        changeValue(event.target.textContent);
+        changeValue(event.target.textContent, event.target.parentNode);
     })
 });
 
-function changeValue(ctrlType) {
+function changeValue(ctrlType, control) {
+    var part = control.querySelector('.controle-contador');
+
     if(ctrlType === '+') {
-        partValue[0].value = parseInt(partValue[0].value) + 1;
+        part.value = parseInt(part.value) + 1;
     } else if(ctrlType === '-') {
-        partValue[0].value = parseInt(partValue[0].value) - 1;
+        part.value = parseInt(part.value) - 1;
     }
 
-    if(partValue[0].value < 0) {
-        partValue[0].value = parseInt(partValue[0].value) + 1;
+    if(part.value < 0) {
+        part.value = parseInt(part.value) + 1;
         return;
     }
 }
